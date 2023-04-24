@@ -93,7 +93,7 @@ input, button{
     color: #333;
 }
 
-input#new-task {
+.list__input_new-task {
     width: 318px;
 }
 
@@ -104,10 +104,6 @@ input#new-task {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.list__item > * {
-    vertical-align: middle;
 }
 
 .list__checkbox {
@@ -121,10 +117,6 @@ input#new-task {
     width: 226px;
 }
 
-li >    input[type="text"] {
-    width: 226px;
-}
-
 .btn__img {
     height: 2em;
     transform: rotateZ(45deg);
@@ -135,23 +127,22 @@ li >    input[type="text"] {
     transform: rotateZ(0);
 }
 
-/* Completed */
+
 .list__label_completed {
     text-decoration: line-through;
     color: #888;
 }
 
-/* Edit Task */
-ul li input[type=text] {
+.list__item .list__input {
     display: none;
 }
 
-ul li.list__item_edit input[type=text] {
+.list__item_edit .list__input {
     display: inline-block;
     width: 224px;
 }
 
-ul li.list__item_edit label {
+.list__item_edit label {
     display: none;
 }
 
