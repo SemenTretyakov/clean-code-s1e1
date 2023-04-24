@@ -6,22 +6,34 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input, button{
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.matrix__img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.matrix__link {
     font-family: fantasy, cursive;
 }
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto;
@@ -35,19 +47,6 @@ body {
 
 .task-row-wrapper {
     display: flex;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li, h3 {
-    list-style: none;
-}
-
-input,button{
-    outline: none;
 }
 
 button {
@@ -65,8 +64,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+.section-title {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -74,6 +72,11 @@ label[for='new-task'] {
     padding: 30px 0 10px;
     margin: 0;
     text-transform: uppercase;
+}
+
+.section-title:first-child {
+    display: block;
+    margin: 0 0 20px;
 }
 
 input[type="text"] {
@@ -164,7 +167,7 @@ ul li.editMode label {
 }
 
 @media (max-width:768px) {
-    .aaa { 
+    .matrix { 
         text-align: center;
     }
 }
